@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coding Junior</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="d-flex justify-content-between">
+            <img
+                class="margin"
+                src="https://codingjr.online/uploads/system/logo-dark.png"
+                height="35"
+            />
+            <div class="margin">
+                <p class="trn" data-trn-key="Language">Language :</p>
+                <select id="lang selector" onchange="languageHandler(event)">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="d-flex justify-content-evenly">
+            <div id="player">
+                <section>
+
+                    <video
+                        id="video player"
+                        width="100%"
+                        controls
+                        src="How to Make Websites with Python.mp4"
+                    ></video>
+                    <br>
+                    <h4 id="video title" class="trn" data-trn-key="vid1"></h4>
+                </section>
+                <hr>
+               <div  class="meta-section" >
+                <h6 id="video title" class="trn" data-trn-key="timestamps"></h6>
+                <section>
+                        <ul>
+                    <li class="timestamp" timevalue="120"  >2:00 <p class="trn text-black" data-trn-key="ts1" ></p> </li>
+                    <li class="timestamp" timevalue="250"  >4:10 <p class="trn text-black" data-trn-key="ts2" ></p> </li>
+                    <li class="timestamp" timevalue="380"  >6:20 <p class="trn text-black" data-trn-key="ts3" ></p> </li>
+                </ul> 
+                </section>
+           
+                <div>
+                    <h5 class="trn" data-trn-key="shortnotes" ></h5>
+                    <p class="trn" data-trn-key="lorem" >
+                        
+                    </p>
+                    <h5>
+                        <p class="trn" data-trn-key="course_mat" ></p>
+                        <img
+                            src="https://www.shutterstock.com/image-vector/download-icon-vector-illustration-on-600nw-1724759407.jpg"
+                            height="35"
+                        />
+                    </h5>
+                </div>
+               </div>
+            </div>
+         
+            <div>
+                <section>
+                    <ul id="content-scroller" class="list-group border border-blue">
+                        <div class="course-item list-group-item active">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                height="15"
+                            />
+                            <span class="text-secondary"> 30 min </span>
+                            <p textContentKey="vid1" >How to Make Websites with Python</p>
+                        </div>
+                        
+                        <div class="course-item list-group-item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+                                height="15"
+                            /><span class="text-secondary"> 45 min </span>
+                            <p textContentKey="vid2" >Getting started with React JS</p>
+                        </div>
+                        <div class="course-item list-group-item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                height="15"
+                            />
+                            <span class="text-secondary"> 30 min </span>
+                            <p textContentKey="vid1" >How to Make Websites with Python</p>
+                        </div>
+                        
+                        <div class="course-item list-group-item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+                                height="15"
+                            /><span class="text-secondary"> 45 min </span>
+                            <p textContentKey="vid2" >Getting started with React JS</p>
+                        </div>
+                        <div class="course-item list-group-item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                height="15"
+                            />
+                            <span class="text-secondary"> 30 min </span>
+                            <p textContentKey="vid1" >How to Make Websites with Python</p>
+                        </div>
+                        
+                        <div class="course-item list-group-item">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+                                height="15"
+                            /><span class="text-secondary"> 45 min </span>
+                            <p textContentKey="vid2" >Getting started with React JS</p>
+                        </div>
+    
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="jquery.translate.js"></script>
+        
+        <script  type="text/javascript" src="lang_strings.js"></script>
+        <script  type="text/javascript" src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+#player {
+   width: 50%;
+}
+
+.margin{
+   margin: 2%;
+}
+
+header{
+   background-color: aliceblue;
+   margin-bottom: 2%;
+   max-height: 100px;
+}
+
+#content-scroller{
+   
+   width: 120%;
+   padding: 2%;
+   overflow-y: scroll;
+   max-height: 60%;
+}
+.timestamp{
+   color: blueviolet;
+}
+.meta-section{
+   background-color: aliceblue;
+   padding: 2%;
+   border-radius: 20px;
+}
