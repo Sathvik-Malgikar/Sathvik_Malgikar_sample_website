@@ -25,7 +25,7 @@ function addActivators() {
                     document.getElementById("video title").setAttribute("data-trn-key", node.getAttribute("textContentKey"));
         
                     translator.lang(document.getElementById("lang selector").value)
-                    document.getElementById("video player").setAttribute("src", node.textContent + ".mp4");
+                    document.getElementById("video player").setAttribute("src", node.getAttribute("contentSrc"));
                 }
             })
             // Remove 'active' class from all divs
